@@ -7,7 +7,7 @@
 body {
     height: 100vh;
     width: 100vw;
-    background-color: darkblue;
+    background-color: firebrick;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,31 +33,62 @@ body {
     height: 100%;
     width: 100%;
     border-radius: 100px;
-    animation: spinBall 0.1s linear infinite;
+    animation: crazy 0.8s linear infinite;
+    background-color: #fff;
 }
 
-@keyframes spinBall {
+@keyframes crazy {
+    0% {
+        background-color: red;
+    }
+    10% {
+        background-color: blue;
+    }
+    20% {
+        background-color: yellow;
+    }
+    30% {
+        background-color: green;
+    }
+    40% {
+        background-color: purple;
+    }
+    50% {
+        background-color: fuchsia;
+    }
+    60% {
+        background-color: white;
+    }
+    70% {
+        background-color: darkorange;
+    }
+    80% {
+        background-color: lightblue;
+    }
+    90% {
+        background-color: turquoise;
+    }
     100% {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
+        background-color: pink;
     }
 }
 
 .paddle {
     height: 100px;
     width: 18px;
-    border-radius: 50%;
     position: fixed;
 }
 
 .paddle_1 {
     top: calc(7.5vh + 55px);
     left: calc(10vw + 30px);
+    background-color: #fff;
 }
 
 .paddle_2 {
     top: calc(85vh + 7.5vh - 100px - 55px);
     right: calc(10vw + 30px);
+    background-color: #fff;
 }
 
 .player_1_score {
